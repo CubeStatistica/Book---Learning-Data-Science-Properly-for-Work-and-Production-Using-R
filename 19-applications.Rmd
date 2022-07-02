@@ -1,7 +1,29 @@
-# Applications
+---
+title: "Row Orientation"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+---
+    
+Row
+-------------------------------------
+    
+### Chart 1
+    
+```{r}
+```
+   
+Row
+-------------------------------------
+    
+### Chart 2
+    
+```{r}
+```
+    
+### Chart 3
 
-Some _significant_ applications are demonstrated in this chapter.
-
-## Example one
+```{r}
+```
 
 ## Example two
