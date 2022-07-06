@@ -35,6 +35,8 @@ ggplot(data = iris, aes(x= Species, y= Petal.Width))+
 ### Chart C
 
 ```{r}
-
+ggplot(iris, aes(x="", y=Petal.Width , fill=Species)) +
+  geom_bar(stat="identity", width=1) +
+  coord_polar("y", start=0)
 ```
 
