@@ -13,7 +13,7 @@ library(flexdashboard)
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Data Set
+# Data Set
 
 ```{r}
 head(iris)
@@ -32,7 +32,7 @@ ggplot(data = iris, aes(x= Species, y= Petal.Width))+
   ggtitle("Count of Species")
 ```
 
-### Chart C
+### Pie Chart 
 
 ```{r}
 ggplot(iris, aes(x="", y=Petal.Width , fill=Species)) +
