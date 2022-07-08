@@ -1,29 +1,11 @@
----
-title: "Row Orientation"
-output: 
-  flexdashboard::flex_dashboard:
-    orientation: rows
----
-    
-Row
--------------------------------------
-    
-### Chart 1
-    
-```{r}
-```
-   
-Row
--------------------------------------
-    
-### Chart 2
-    
-```{r}
-```
-    
-### Chart 3
+# Applications
 
-```{r}
-```
+Some _significant_ applications are demonstrated in this chapter.
+
+We can just simply make basic Flexdashbaord by slecting Flexdashbard template in Rmarkdown. 
+
+We can simply knit this as shiny using runtime : shiny command 
+## Example one
+
 
 ## Example two
