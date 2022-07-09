@@ -4,8 +4,7 @@ Some _significant_ applications are demonstrated in this chapter.
 
 We can just simply make basic Flexdashbaord by slecting Flexdashbard template in Rmarkdown. 
 
-We can simply knit this as shiny using runtime : shiny command 
-## Example one
+We can simply knit this as shiny using **runtime : shiny ** command.
 
+We can add side bar in Flexdashbaord by just assigning as **Column {.sidebar}**.
 
-## Example two
