@@ -22,7 +22,6 @@ has is somehow mal-configured)" https://github.com/rstudio/reticulate/issues/607
 
 
 ```{r}
-
 if (!require(reticulate)) install.packages('reticulate'); require(reticulate)
 
 ```
@@ -36,16 +35,13 @@ Below we do a simple calculations in python.
 
 ```{python}
 1 + 1
-
 3 + 3
 ```
 
 We will now talk about list comprehension in Python. 
 
 ```{python}
-
 squares = [ i * i for i in range(10)]
-
 print(squares)
 
 ```
@@ -53,18 +49,13 @@ print(squares)
 The above one line of code would typically written out in python as:
 
 ```{python}
-
 # First initiate an empty list.
 squares = list()
-
 # The other way of initiating an empty list is:
 squares = []
-
 # Now iterate over a range in a for loop and append.
 for i in range(10):
-    
     squares.append(i*i)
-    
 # Now print
 print(squares)
 
@@ -74,16 +65,70 @@ print(squares)
 We can also use a map() object to achieve the same thing. The map() method is a functional programming method instead of the object oriented method.
 
 ```{python}
-
 txns = [1.09, 23.56, 57.84, 4.56, 6.78]
 TAX_RATE = 0.08
-
 def get_price_with_tax(txn):
     return txn * (1 + TAX_RATE)
-  
 final_prices = map(get_price_with_tax, txns)
+final_prices_l = list(map(get_price_with_tax, txns))
 list(final_prices)
 
+```
+
+The above is in fact very natural in R. The `map() - Python` function in python is exactly used as the `with() - R` function in R.
+
+Though notice that this `final_prices` object is a map() object, even though it appears as a list. 
+
+```{python}
+print(final_prices)
+print(type(final_prices))
+
+```
+
+Nonetheless, this can be converted to a list using the command `list()`
+
+```{python}
+print(final_prices)
+list(final_prices)
+final_prices_l = list(final_prices) # Very interesting this does not work here.
+print(final_prices_l) # Very interesting that this is empty.
+
+```
+
+In python this does not work as done above even though it should work. 
+
+For this to work you need to make it a list at the same time you apply the map method.
+
+```{python}
+
+final_prices_l = list(map(get_price_with_tax, txns))
+print('Type :', type(final_prices_l))
+print('final_prices:', final_prices_l)
+
+```
+
+Another interesting python trick:
+
+```{python}
+
+inputs = list()
+while (current := input("Write something: ")) != "quit":
+    inputs.append(current)
+
+```
+
+You can place the conditional at the end of the statement for simple filtering, but what if you want to change a member value instead of filtering it out? In this case, it’s useful to place the conditional near the beginning of the expression:
+
+```
+new_list = [expression (if conditional) for member in iterable]
+```
+Reference link: https://realpython.com/list-comprehension-python/
+
+
+
+```{python}
+# Dictionary comprehension
+squares = {i: i * i for i in range(10)}
 
 ```
 

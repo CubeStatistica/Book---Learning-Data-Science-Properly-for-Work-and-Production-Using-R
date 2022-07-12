@@ -1,0 +1,459 @@
+--- 
+title: "All About R and R Applications"
+author: "Faizan Khalid Mohsin"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Prerequisites
+
+Placeholder
+
+
+
+<!--chapter:end:index.Rmd-->
+
+# Introduction {#intro}
+
+
+Hello Everyone! Hope you all are doing well. 
+
+I hope to help you become a data scientist through this book that you would otherwise need to learn to become by being hired and trained at a machine learning company. 
+
+
+This book's examples and specific code is run on a window's operating system and is done using R. 
+
+
+
+
+
+
+<!--chapter:end:01-intro.Rmd-->
+
+
+# Overview
+
+Placeholder
+
+
+
+<!--chapter:end:02-overview.Rmd-->
+
+
+# R Programming Techniques
+
+Placeholder
+
+
+## R Programming Essential Tips 
+## Basics of R
+### Print a string.
+### print a integer Value.
+### Print with variable.
+### Print String with varibale.
+## Assign variables
+### Using = operator.
+### Using <- operator.
+### Using -> operator.
+### Multiple assignments
+## Writing Basic functions.
+### Function  for x power y
+### Example
+## Working with libraries.
+### How to install packages. 
+## Plots with ggplot
+### Barplot
+### point with ggplot2.
+### Boxplot with ggplot2
+## Introduction to dplyr library
+### Data manupulation with dplyr
+#### filter()
+#### slice()
+#### arrange()
+#### select()
+#### rename()
+#### mutate()
+## Introduction to tidyverse package.
+
+<!--chapter:end:03-rprogramming.Rmd-->
+
+
+# Exploratory Data Analysis {#eda}
+
+Placeholder
+
+
+## Read the Data into the Programming Language
+### Data Forms: Long format vs. Wide format
+## Basic EDA Steps
+### Step 1
+### Step 2
+## Intro to Tidy Verse Package
+## Loading Data in R
+## Dplyr
+### Filter
+### Arrange
+### Mutate 
+
+<!--chapter:end:06-eda.Rmd-->
+
+# General Useful Tips {#tips}
+
+## Correct Writing
+
+
+First of all, I want to start by Titles. It is very important that you know how titles are written properly. You need to title you analysis, visualization, applications, sections, everything correctly. 
+
+Every first letter in a title should be capitalized except for prepositions or connecting words like and, or, the, this. 
+If we want to convert the phrase general useful tips to a title it becomes: General Useful Tips. 
+
+Now, also, sentences should be written properly. The first word's first letter should be capital and the sentence should end with a period also called full-stop like this one. 
+
+## Essential Survival Habits.
+
+One great thing I find about R Markdown and knitting a document is that to successfully knit there needs to be zero errors. So this is a great way to check if there is any error in the code.
+
+For working in R Markdown. Please knit the markdown after making small changes in the code so you know if there is an error and can isolate, correct, and debug it. If you write a lot of code and then knit and there is a error, even a very simple error can be very hard to find buried in code. 
+
+Further, once it knits successfully, then the code needs to be immediately committed to git and push it to GitHub.
+
+These two steps of knitting and pushing the code to GitHub should be like breathing. Done extremely often automatically and even without thinking. If you can you should make a short cut like TAB + G so that the the r markdown knits and if successful then commits and pushes to GitHub only prompting you to add a commit message.
+
+## Good General Habits.
+
+Another, important tip is to look at your visualizations and the summary tables and think if the numbers you get make sense. I will be very frank here, I typically try not to do this because I have to use my brain and think. And sometimes that is actually very mentally power consuming.  
+
+<!--chapter:end:07-tips.Rmd-->
+
+
+# Pull Requests
+
+Placeholder
+
+
+## Folder Organization
+## The Command Line
+## Essential Command Line Tips
+## How to see which remote repository your local repository is linked to or more explicitely, it is fetching from and pushing to.
+### How to name git branches.
+## Git Commands Summary
+
+<!--chapter:end:08-git.Rmd-->
+
+
+# R Markdown {#rmarkdown}
+
+Placeholder
+
+
+## R markdown general tips for reports.
+#### i. Code blocks:
+#### ii. Comments blocks:
+#### i. To see both code and output on R Markdown, write code in between \```{r} and 
+#### \``` 
+#### ii. If we only want to see the output and not the code then write the code between \```{r, 
+#### \ echo=FALSE } 
+#### and 
+#### \```
+## This is written in Heading size 2. In html is h2.
+### This is written in Heading size 3. In html is h3.
+#### This is written in Heading size 4. In html is h4.
+##### This is written in Heading size 5. In html is h5.
+###### This is written in Heading size 6. In html is h6.
+## Sample paragraph displaying R Markdown capabilities
+## math example
+
+<!--chapter:end:09-rmarkdown.Rmd-->
+
+
+# Visualization {#viz}
+
+Placeholder
+
+
+## Essential Visualization Principals
+## Writing Visualization Titles
+## Bar Chart tips
+
+<!--chapter:end:10-visualization.Rmd-->
+
+
+# How to host website on Git Hub {#gitwebhost}
+
+Placeholder
+
+
+
+<!--chapter:end:11-hosting_site_on_github.Rmd-->
+
+# Python in R {#python}
+
+
+## Basics of Running Python in R.
+
+To run python in R you need to install the package `reticulate`. 
+
+Further, I would like to bring an issue to attention. If you already have Anaconda installed, and even if it is found by `reticulate`, you will be prompted to install miniconda.
+
+I chose 'n' when prompted to install it.
+
+The explanation give by the `reticulate` package people: 
+
+"This was by design. (...) Note that you will only be prompted once, and rejecting that prompt is "sticky" (you won't get bugged about it again on the same account / machine)" https://github.com/rstudio/reticulate/issues/607
+
+The reason they state is, "Our idea is that by standardizing on a known variant of Python we'll make
+the package (and other packages that use it) easier to install and support.
+As you may have noticed a large percentage of the GitHub issues are Python
+configuration issues (often it's the case that the version the user already
+has is somehow mal-configured)" https://github.com/rstudio/reticulate/issues/607
+
+
+
+```{r}
+if (!require(reticulate)) install.packages('reticulate'); require(reticulate)
+
+```
+
+The above first checks if the package `reticulate` is installed or not. If it is not then it install the package and then loads it. The `;` allows you to execute two commands that would need to be written on separate lines to be on the same line. 
+
+__Tips :__ You can write an `if` statement in one line. Doing so also removes the need to wrap the body of the `if` statement in curly brackets `{}`. Now, however, after the `install.packages()` command the `require()` command would need to be written on a second line to be executed - writing it on the same line will cause it to give an error, but doing so will remove the nice compact one-line form of the `if` statement, hence we use the `;` to execute the next command on the same line. In fact, we can have multiple commands executed in the same line by separating them by the semi-colon `;`. 
+
+
+Below we do a simple calculations in python.
+
+```{python}
+1 + 1
+3 + 3
+```
+
+We will now talk about list comprehension in Python. 
+
+```{python}
+squares = [ i * i for i in range(10)]
+print(squares)
+
+```
+
+The above one line of code would typically written out in python as:
+
+```{python}
+# First initiate an empty list.
+squares = list()
+# The other way of initiating an empty list is:
+squares = []
+# Now iterate over a range in a for loop and append.
+for i in range(10):
+    squares.append(i*i)
+# Now print
+print(squares)
+
+```
+
+
+We can also use a map() object to achieve the same thing. The map() method is a functional programming method instead of the object oriented method.
+
+```{python}
+txns = [1.09, 23.56, 57.84, 4.56, 6.78]
+TAX_RATE = 0.08
+def get_price_with_tax(txn):
+    return txn * (1 + TAX_RATE)
+final_prices = map(get_price_with_tax, txns)
+final_prices_l = list(map(get_price_with_tax, txns))
+list(final_prices)
+
+```
+
+The above is in fact very natural in R. The `map() - Python` function in python is exactly used as the `with() - R` function in R.
+
+Though notice that this `final_prices` object is a map() object, even though it appears as a list. 
+
+```{python}
+print(final_prices)
+print(type(final_prices))
+
+```
+
+Nonetheless, this can be converted to a list using the command `list()`
+
+```{python}
+print(final_prices)
+list(final_prices)
+final_prices_l = list(final_prices) # Very interesting this does not work here.
+print(final_prices_l) # Very interesting that this is empty.
+
+```
+
+In python this does not work as done above even though it should work. 
+
+For this to work you need to make it a list at the same time you apply the map method.
+
+```{python}
+
+final_prices_l = list(map(get_price_with_tax, txns))
+print('Type :', type(final_prices_l))
+print('final_prices:', final_prices_l)
+
+```
+
+Another interesting python trick:
+
+```{python}
+
+inputs = list()
+while (current := input("Write something: ")) != "quit":
+    inputs.append(current)
+
+```
+
+
+```
+new_list = [expression (if conditional) for member in iterable]
+```
+
+
+## Data Analysis with Python Using Pandas
+
+For EDA I would recommend looking at the data in its entirety and then to look at each variable individually. 
+
+Many times the dat has too many variables to look at each individual one manually. In such a case choose the most important variables and perform manual EDA on those. We will talk about writing scripts to perform automated EDA much later.
+
+Let me first start on how to look at individual variables. 
+
+1. Write the Title with the variable name.
+2. Find the number of unique values of the variable. Is it less then the total number of rows.
+3. Print the unique values of the variable.
+4. Make a table with the count of the values of the variable.
+5. Find the number of missing values or NA's in the variable. 
+6. You should visualize the count table and include the NA's in the visual. 
+7. All your observations that you think are important about the variable through the tables and visualiations that are interesting, or of note should be written down at the end, before going to the next variable.
+
+Then repeat steps 1 to 7 for the next variable.
+ 
+
+Here is just the list of things and the order in which they should appear in the report for each variable that is important. 
+
+### Step 1
+
+1. Title
+2. Number of unique values
+3. List of unique values
+4. Count table of the values of the variable with percentage counts as well. 
+5. Number of missing values in the variable (i.e. NA's) with percentage counts in the table as well as a table. 
+6. Visualization of the count table including the number of missing values in the variable.
+7. Observations of note about the variable.
+
+To do this in the EDA section of what I believe would be your report you should first write the title with the variable name for example: Looking at VaraibleName in Raw Version.
+
+For points 4 and 5 in step 1, they should appear in the same table ideally, but you could also put step 4 in one table and step 5 in a separate table. Some more detail can be found below:
+
+After that you should print the number of unique values and then print what the unique values are.
+After that you should make a table with the count of the unique values in the variable. Following this, in the same table also show the number of missing values as counts and then the percentage of missingness (missing data) for each value. Lastly, create a visualization for this count table. 
+
+If the variable is continuous then the visualization should be a histogram. If the variable is numeric but not continues, for example discrete like number of houses in a district then the visualization should be a bar chart also call bar graph and bar plot. Finally, if the variable is categorical such as the participant's sex which can be male, female or other, then the visualization should be a bar chart. 
+
+
+### Step 2
+
+When this is done for the chosen variables find the counts as well as the percentage of missing values in all the variables of the data set, and print those as a table.
+
+
+
+
+
+
+
+
+
+
+
+
+<!--chapter:end:12-python.Rmd-->
+
+
+# Machine Learning {#ml}
+
+Placeholder
+
+
+## Machine Learning Overview
+### Trade-off Between Prediction Accuray and Model Interpretability.
+### Trade-off Between Bias and Variance.
+### Model Assessment
+## Machine Learning Coding Conventions
+## Algorithms
+
+<!--chapter:end:18-ml.Rmd-->
+
+# Applications
+
+Some _significant_ applications are demonstrated in this chapter.
+
+## Example one
+
+## Example two
+
+<!--chapter:end:19-applications.Rmd-->
+
+
+# Interview Questions {#interviewquestions}
+
+Placeholder
+
+
+## Intact Senior Data Scientist Questions for Technical Test
+### Check on Glassdoors to see if there are any questions available there.
+## Amazon Data Science Questions.
+## Important Ideas and Interview Questions
+
+<!--chapter:end:20-interviewquestions.Rmd-->
+
+
+# SQL {#sql}
+
+Placeholder
+
+
+## SQL Overview
+### Basic SQL commands
+#### Selecting Columns and Dispalying the Data.
+#### Counting the Rows and Groups.
+#### GROUP BY is Amazing.
+#### Deleting all rows from a table.
+#### Deleting the entire table.
+#### Deleting the entire database.
+#### How to insert data into tables. 
+## PostgreSQL
+## Install linux in Windows
+### Installing Linux subsystem in windows. 
+### Commands in Linux (Terminal, Command Line).
+### Installing psql client / server in the Linux subsystem.
+### Commands in psql client.
+## Dr. Chuck Severance Questions - SQL Taught in PostgreSQL
+### Auto Increment
+### Time
+### Altering Tables. 
+#### Adding columns to a table.
+#### Removing/Dropping columns in a table.
+### Stored Procedures
+
+<!--chapter:end:21-sql.Rmd-->
+
+# Final Words
+
+We have finished a nice book.
+
+<!--chapter:end:98-summary.Rmd-->
+
+`r if (knitr:::is_html_output()) '
+# References {-}
+'`
+
+<!--chapter:end:99-references.Rmd-->
+
