@@ -9,6 +9,20 @@ The coding questions:
 2. Cross Validation
 3. Bag of words features
 
+Q 1.0. What is vector compression?
+
+Q 2.0. Describe cross-validation and when is it done and when not to do it.
+
+K-fold cross-validation is a technique to partition the data into several chunks and rotating through them for training and testing the model. For K-fold cross validation the data is separated into k non-overlapping (mutually exclusive) partitions of equal size. The data in all partitions except the first partition is used to training the model and the data left out is used to test the model. We do this again, but now use all the data except in the second partition for training and the data in the second partition is used for testing. We do this until we rotate through all the data using each partition only once for testing. At the end, we combine the trained k-models into our final model.
+
+Q 2.1. Implement 10-fold cross-validation in python on a simple machine learning algorithm. 
+
+Q 2.2. Generalize 10-fold CV python implementation into k-fold CV implementation. Allow the user to choose the input using the `input()` function in python for the number of folds to perform and the python code should be able to implement it.
+
+Q 3.0. What is bag of words features?
+
+Q 3.1. Implement this in python.
+
 The theoretical machine learning questions
 
 The topics will include Clustering, A/B testing, DT(?)
@@ -20,6 +34,12 @@ Perhaps she also mentioned random forest.
 1. The questions are not quite hard, which will cover from python to simple algorithm in machine learning. 
 
 2. I think mine has something in NLP.
+
+Questions I have thought up for NLP
+2.1. What is wordtovec?
+2.2. What is bag of words?
+2.3. What are the main algorithms of NLP?
+2.4. What do the different NLP algorithms do? What is their aim.
 
 3. How to improve the performance of your model?
 
