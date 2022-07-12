@@ -40,6 +40,55 @@ Below we do a simple calculations in python.
 3 + 3
 ```
 
+We will now talk about list comprehension in Python. 
+
+```{python}
+
+squares = [ i * i for i in range(10)]
+
+print(squares)
+
+```
+
+The above one line of code would typically written out in python as:
+
+```{python}
+
+# First initiate an empty list.
+squares = list()
+
+# The other way of initiating an empty list is:
+squares = []
+
+# Now iterate over a range in a for loop and append.
+for i in range(10):
+    
+    squares.append(i*i)
+    
+# Now print
+print(squares)
+
+```
+
+
+We can also use a map() object to achieve the same thing. The map() method is a functional programming method instead of the object oriented method.
+
+```{python}
+
+txns = [1.09, 23.56, 57.84, 4.56, 6.78]
+TAX_RATE = 0.08
+
+def get_price_with_tax(txn):
+    return txn * (1 + TAX_RATE)
+  
+final_prices = map(get_price_with_tax, txns)
+list(final_prices)
+
+
+```
+
+
+
 
 ## Data Analysis with Python Using Pandas
 
