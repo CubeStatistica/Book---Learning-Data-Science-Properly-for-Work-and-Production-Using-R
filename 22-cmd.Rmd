@@ -1,5 +1,8 @@
 # The Command Line and Linux Terminal {#cmd}
 
+I had an entire chapter on git bash command line and you will see a lot of the same commands work exactly the same in the Linux command line (Terminal). In fact, git bash is a subset, or simplified or less powerful version of the Linux Terminal (Linux command line/Linux bash). There for there are several useful commands that work in Linux Terminal bash but not in git bash terminal. Just to mention a few here: cal, top, to name a few, work in Linux but not in git bash.
+
+
 ## Folder Organization
 
 Spending a few seconds to properly name your folders and files will help you find your files more quickly later and it will look more professional.
@@ -51,17 +54,29 @@ cal
 
 The data and time can also be displayed using the `date` command. 
 
-```{bash, eval = F}
+```{bash}
 date
 ```
 
-We can also check the disk usage or file size.
+We can also check the disk usage. The option `-h` list the disks and usage in human readable format. 
 
-```{bash, eval=F}
+```{bash}
 df -h
-du -sh *
-
 ```
+
+As you can see the information below is much less human reabable compared to the above the output.
+
+```{bash}
+df
+```
+
+
+We can also check the file sizes in the current folder.
+
+```{bash}
+du -sh *
+```
+
 
 
 Can check what is happening using:
