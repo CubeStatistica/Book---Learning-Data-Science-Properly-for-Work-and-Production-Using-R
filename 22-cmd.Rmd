@@ -1,3 +1,5 @@
+# The Command Line and Linux Terminal {#cmd}
+
 ## Folder Organization
 
 Spending a few seconds to properly name your folders and files will help you find your files more quickly later and it will look more professional.
@@ -39,28 +41,33 @@ So when you have two separate coding projects running and you need to commit and
 
 
 
-## How to see which remote repository your local repository is linked to or more explicitely, it is fetching from and pushing to.
+## Important Linux Terminal Commands
 
-Several git command accomplish this, with differing levels of detail. 
-
-The simplest one I find is the following, though it gives a lot of detail.
+In linux terminal we can find what the day is displayed as a calendar. Simply run the command `cal`. 
 
 ```{bash, eval=F}
-git config -l
+cal 
+```
+
+The data and time can also be displayed using the `date` command. 
+
+```{bash, eval = F}
+date
+```
+
+We can also check the disk usage or file size.
+
+```{bash, eval=F}
+df -h
+du -sh *
+
 ```
 
 
-There is another one with a little less detail:
+Can check what is happening using:
 
 ```{bash, eval=F}
-git remote show origin
-```
-
-
-Now the below one gives the minimum information: the fetch and push information.
-
-```{bash, eval=F}
-git config -v
+top
 
 ```
 

@@ -109,11 +109,11 @@ print('final_prices:', final_prices_l)
 
 Another interesting python trick:
 
-```{python}
+```{python, eval = F}
 
-inputs = list()
-while (current := input("Write something: ")) != "quit":
-    inputs.append(current)
+# inputs = list()
+# while (current := input("Write something: ")) != "quit":
+#     inputs.append(current)
 
 ```
 
@@ -132,6 +132,80 @@ squares = {i: i * i for i in range(10)}
 
 ```
 
+Worked exercise. 
+
+Implement bag of words in python. Given a body of text list every word and count the number of times it occurs.
+
+So for each word would have a corresponding count. A dictionary is a natural datatype for such a problem due to its key-value pair structure.
+
+```{python}
+peom = "My poem after a long time. I shall write a poem praising the Creature and working hard."
+print(peom.split())
+a = dict()
+a["a"] = 1
+print(a)
+print(a.get("a"))
+#print(a["a"] := a.get("a") + 1)
+a["a"] = a.get("a") + 1
+print(a)
+a["b"] = a.get("b", 0) + 1
+print(a)
+d = "d"
+a[d] = a.get(d, 0) + 1
+print(a)
+
+```
+
+
+
+```{python}
+
+poem = "My poem after a long time. I shall write a poem praising the Creature and working hard."
+
+# fun || input: string ==> output: dict
+
+def bag_of_words(text):
+  
+    bagWordsDict = {}
+    for word in text.split():
+        #print(word)
+        bagWordsDict[word] = bagWordsDict.get(word, 0) + 1
+    return bagWordsDict
+
+print(bag_of_words(poem))
+
+```
+
+__One of the important key differences between python and R is the return statement in a function. In R the return command is a command and it works like a function and it takes input the object that needs to be returned. So in R you would end the function to return object `obj_returned` would be written as follows:  `return(obj_returned)`. This is the same how something is printed in R `print(obj_returned)`. In python 3.* printing works the same however, the return statement is not used as a function as is in R and is just a statement and would be written as follows: `return obj_returned`. There are no `()`. And if you do write `return(obj_returned)` in python it can cause issues. For example if the returned object is a dictionary you will receive the following error: `TypeError: 'dict' object is not callable`.__
+
+
+For improved presentation we will convert the dictionary to a pandas data frame.
+
+First we load the `pandas` package. It is assumed it has already been downloaded in the machine.
+
+```{python}
+import pandas as pd
+```
+
+
+
+```{python}
+words_dict = bag_of_words(poem)
+print(words_dict)
+```
+
+
+
+```{python}
+
+print(words_dict)
+
+Bag_Of_Words = pd.DataFrame('words' = words_dict.keys(), 'count' = words_dict.values()
+)
+
+print(Bag_Of_Words)
+
+```
 
 
 

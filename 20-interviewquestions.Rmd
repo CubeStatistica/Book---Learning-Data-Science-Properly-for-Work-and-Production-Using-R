@@ -11,6 +11,10 @@ The coding questions:
 
 Q 1.0. What is vector compression?
 
+Attempt 1: Not sure what is vector compression, but I know what is list comprehension. It is a method to write a for loop in one line. It can have conditional statements as well. 
+
+ 
+
 Q 2.0. Describe cross-validation and when is it done and when not to do it.
 
 K-fold cross-validation is a technique to partition the data into several chunks and rotating through them for training and testing the model. For K-fold cross validation the data is separated into k non-overlapping (mutually exclusive) partitions of equal size. The data in all partitions except the first partition is used to training the model and the data left out is used to test the model. We do this again, but now use all the data except in the second partition for training and the data in the second partition is used for testing. We do this until we rotate through all the data using each partition only once for testing. At the end, we combine the trained k-models into our final model.
@@ -21,7 +25,13 @@ Q 2.2. Generalize 10-fold CV python implementation into k-fold CV implementation
 
 Q 3.0. What is bag of words features?
 
+
+
 Q 3.1. Implement this in python.
+
+Implementing bag of words in python. 
+
+
 
 The theoretical machine learning questions
 
