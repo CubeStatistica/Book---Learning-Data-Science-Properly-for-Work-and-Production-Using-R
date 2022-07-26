@@ -1,6 +1,10 @@
 # The Command Line and Linux Terminal {#cmd}
 
+## Chapter Primer
+
 I had an entire chapter on git bash command line and you will see a lot of the same commands work exactly the same in the Linux command line (Terminal). In fact, git bash is a subset, or simplified or less powerful version of the Linux Terminal (Linux command line/Linux bash). There for there are several useful commands that work in Linux Terminal bash but not in git bash terminal. Just to mention a few here: cal, top, to name a few, work in Linux but not in git bash.
+
+In fact, git commands and Linux commands should be used together. Hence, here I will be using both and teach more of git as well as Linux commands, as well as highlighting some difference between the two.
 
 
 ## Folder Organization
@@ -86,16 +90,12 @@ top
 
 ```
 
-Finally, there is the command which is the longest in terms of typing out and according to me the hardest to remember, but it gives you the least amount information hence the output is the least verbose.
+Now you can see that your Terminal screen has a lot of output at this point and is getting very cluttered. The command to clear is simply: `clear`
 
 ```{bash, eval=F}
-git config --get remote.origin.url
+clear
 
 ```
-
-Though it is has one drawback that 
-
-Any of the commands with config in them have the added benefit that you do not need to be connected to the internet (more technically accurate and more precise parlance, you do not need to be on a network that can reach the repo where the origin resides.)
 
 ### How to name git branches.
 
@@ -105,7 +105,7 @@ Therefore, the name convention for a branch as above would be like this: feature
 
 This is the branch name. Notice, the first thing is what type of edit is being done, followed by forward slash and lastly the jira ticket. 
 
-Other types of code edits could be 'debug' or 'test' instead of feature. Thus, thos branches would be named as follows: debug/CS-150 or test/CS-150
+Other types of code edits could be 'debug' or 'test' instead of feature. Thus, those branches would be named as follows: debug/CS-150 or test/CS-150
 
 
 ## Git Commands Summary
