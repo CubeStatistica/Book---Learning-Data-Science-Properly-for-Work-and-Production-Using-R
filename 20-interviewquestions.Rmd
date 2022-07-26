@@ -73,7 +73,43 @@ Questions I have thought up for NLP
 
 9.4 What data science technology you think has the potential to change the world and in what field?
 
+
+
+
+
 ## Amazon Data Science Questions.
+
+Amazon Leadership Principals
+
+
+
+Dive deep into the following topics through discussion of your past and current experiences: 
+
+- Estimation and hypothesis testing.
+
+- Regression
+
+- Experiments
+
+- Casual Inference
+
+- Forecasting models
+
+- Time Series forecasting
+
+Machine Learning Knowledge:
+
+Talk about the following machine learning topics:
+
+- Basic machine learning models
+- Supervised vs unsupervised learning
+_ Bias-Variance tradeoff
+- Boosting
+- Decision trees
+- Different loss functions
+- Cross-Validation
+- Use of logistic regression for classification
+- Others TBA
 
 Link: https://www.glassdoor.ca/Interview/Amazon-Data-Scientist-Interview-Questions-EI_IE6036.0,6_KO7,21_IP2.htm?filter.jobTitleFTS=Data+Scientist
 
