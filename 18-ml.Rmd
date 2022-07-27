@@ -1,5 +1,11 @@
 # Machine Learning {#ml}
 
+To begin with here are some more great free online books on data science and machine learning.
+
+https://jakevdp.github.io/PythonDataScienceHandbook/index.html
+
+
+
 
 ## Machine Learning Overview
 

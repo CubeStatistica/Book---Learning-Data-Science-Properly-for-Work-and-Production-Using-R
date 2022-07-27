@@ -32,7 +32,7 @@ First of all, I would like to say that command line and linux are amazing. It do
 
 ## The Command Line
 
-First please note that for the title the first letter of every word is capital except of connecting words which are not present. Also, since it is a Title it does not end with a peroid also called full-stop. 
+First please note that for the title the first letter of every word is capital except of connecting words which are not present. Also, since it is a Title it does not end with a period also called full-stop. 
 
 Here are the basic commands to be used at the command line or terminal. 
 
@@ -96,6 +96,11 @@ Now you can see that your Terminal screen has a lot of output at this point and 
 clear
 
 ```
+
+
+## 
+
+At this point
 
 ### How to name git branches.
 
