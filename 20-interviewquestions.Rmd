@@ -77,6 +77,10 @@ Questions I have thought up for NLP
 
 
 
+
+
+
+
 ## Amazon Data Science Questions.
 
 Amazon Leadership Principals
@@ -88,7 +92,7 @@ Are obsessed with the customer. Think how can we serve the customer and then thi
 You do not sacrifice long term success for short term gains. Also, they think beyond just their task, job, and team but think of the success of the company as a whole. Finally, they never say "that's not my job."
 
 3. Innovate, Invent, and Simplify
-
+Leaders innovate, invent, and simplify. They are externally aware, look for new ideas from everywhere, and are not limited by "not invented here", not done by us. As we do new things, we accept that we may be misunderstood for long periods of time, and since we are trying new things we might be misunderstanding something for long periods of time before correctly understand what is the best way to it.
 
 4. Are Right, A Lot
 5. Learn and Be Curious
