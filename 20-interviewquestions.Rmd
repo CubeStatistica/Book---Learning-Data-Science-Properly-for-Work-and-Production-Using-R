@@ -239,6 +239,10 @@ This has:
 
 Link: https://github.com/jivoi/awesome-ml-for-cybersecurity
 
+__Course lectures of DS4CS: __ https://www.youtube.com/watch?v=YzRjY4f_-tM&list=PL_ExBw9oE-6iHE31yoeZ_5HgaCsgpyMtk&index=1&ab_channel=%E8%95%AD%E8%88%9C%E6%96%87
+
+
+
 Cyber security has a red team and a blue team. The red team offensive testing. Blue team defensive testing.
 
 Look into machine learning for red team and blue team. 
