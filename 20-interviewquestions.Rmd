@@ -201,6 +201,68 @@ It was basically total four round,
 3) Coding Round: Python or SQL
 4) HR Round
 
+
+
+## Data Science in Cyber Security
+
+### Cyber Security
+
+Links online to articles:
+
+https://www.securityroundtable.org/the-growing-role-of-machine-learning-in-cybersecurity/
+
+https://medium.com/cyberdefendersprogram/python-for-cybersecurity-lesson-3-data-analysis-with-pandas-501441e14fe0
+
+https://towardsdatascience.com/applying-data-science-to-cybersecurity-network-attacks-events-219fb6312f54
+
+__Data Science for Cybersecurity Course__: https://sites.google.com/view/mikehsiao/teaching/data-science-for-cybersecurity-2022
+
+https://www.worldscientific.com/worldscibooks/10.1142/q0167#t=toc
+
+__Very good talk__: https://www.youtube.com/watch?v=SmDL7t6UQk0&ab_channel=DataScienceDojo
+
+__GitHub repo of Book on Machine Learning for Cyber Security: __ https://github.com/wtsxDev/Machine-Learning-for-Cyber-Security
+
+__Kaggle challenge__: https://www.kaggle.com/datasets/mohamedamineferrag/edgeiiotset-cyber-security-dataset-of-iot-iiot
+
+__A curated list of amazingly awesome tools and resources related to the use of machine learning for cyber security.__
+
+This has:
+
+-Datasets
+-Papers
+-Books
+-Talks
+-Tutorials
+-Courses
+-Miscellaneous
+
+Link: https://github.com/jivoi/awesome-ml-for-cybersecurity
+
+Cyber security has a red team and a blue team. The red team offensive testing. Blue team defensive testing.
+
+Look into machine learning for red team and blue team. 
+
+
+
+Blue team blocks the red team using automation. 
+
+
+
+Cloud flare, bulletproof security. 
+
+Big cyber security companies using Sophos, Solar Events.
+
+Data is very important in both CS and DS. 
+
+Understand what port is, what is a packet? 
+
+Need to understand networking, and internet protocol. Understand basics of linux.
+
+
+
+
+
 ## Important Ideas and Interview Questions
 
 __Q1. What is the difference between between random forest and xgboost?__
