@@ -129,6 +129,25 @@ You could have also just run `ls` instead of `ls -l`. The `-l` is the option say
 
 Now if you first run the `ls` command you will not see the /usr/bin folder appear in the list.
 
+To get back to where you were, which I assume you were in the root directory simply type `cd`
+
+```{bash}
+cd
+```
+
+Now you do not need to always `cd` into this folder if you need to print all the commands. 
+
+Can you write the command that will list all the commands staying in the current library.
+
+You have to use the general Linux command format.
+
+Here it is:
+
+```{bash}
+ls -l /usr/bin
+```
+
+You can see the same format of: `command -option target_folder`
 
 
 
@@ -151,7 +170,7 @@ touch test.txt
 
 You can also see what is written in files. You can use the `cat` or the `less` commands. 
 
-Cat prints everything to the consule.
+Cat prints everything to the console.
 
 ```{bash}
 cat test.txt
@@ -208,15 +227,15 @@ This removes the entire directory tree or folder tree.
 
 Finally, I want to mention the command `ps` which is processes. This prints the current processes that are running. 
 
-```{bash, eval = F}
+```{bash}
 ps
 ```
 
 For example, the above prints the following. 
 
-  <!-- PID TTY          TIME CMD -->
-  <!--   9 pts/0    00:00:00 bash -->
-  <!-- 321 pts/0    00:00:00 ps -->
+  PID TTY          TIME CMD
+    9 pts/0    00:00:00 bash
+  321 pts/0    00:00:00 ps
 
 One thing I would like to mention is the the `ps` command in git bash gives a different output.
 
