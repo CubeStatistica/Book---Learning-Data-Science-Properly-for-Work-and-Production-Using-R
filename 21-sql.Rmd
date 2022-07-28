@@ -232,3 +232,11 @@ CREATE TABLE keyvalue (
 
 ```
 
+
+## SQL Practice Questions
+
+### Question from Leetcode.
+
+
+
+
