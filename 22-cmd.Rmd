@@ -50,6 +50,9 @@ So when you have two separate coding projects running and you need to commit and
 
 ## Important Linux Terminal Commands
 
+The main command is just looking what objects such as files and folders are in the current folder you are in. For this we use the `ls` command.
+
+
 In linux terminal we can find what the day is displayed as a calendar. Simply run the command `cal`. 
 
 ```{bash, eval=F}
@@ -97,10 +100,126 @@ clear
 
 ```
 
+What we can also see not only what is in the current folder by typing the `ls` command but we can also see what is in some other folder, for example in the folder called `temp`.
 
-## 
+```{bash, eval=F}
+ls -lah /tmp
+```
 
-At this point
+I will now explain the general structure and form of Linux commands.
+
+## Structure and Format of Linux Commands
+
+All Linux commands will have the general format:
+
+Structure: `command -option target` E.g.    : `   ls   -lah     /tmp `
+
+The `option` and the `target` are like the arguments the command (e.g. the Linux function) takes.
+
+In fact, one easy way of finding all terminal commands in Linux is to simply move into the `/usr/bin` folder and then run `ls` command. It will give you a list of all the commands. 
+
+```{bash}
+
+cd /usr/bin
+ls -l
+
+```
+
+You could have also just run `ls` instead of `ls -l`. The `-l` is the option saying display the list in long form.
+
+Now if you first run the `ls` command you will not see the /usr/bin folder appear in the list.
+
+
+
+
+## More Useful Terminal Commands in Linux
+
+The `which` command is very useful.
+
+```{bash, eval = F}
+which python
+```
+
+You can also create a file using the `touch` command
+
+
+```{bash}
+touch test.txt
+```
+
+
+
+You can also see what is written in files. You can use the `cat` or the `less` commands. 
+
+Cat prints everything to the consule.
+
+```{bash}
+cat test.txt
+```
+
+`Less` does not and allows you to move up and down using the keyboard arrows.
+
+```{bash}
+less test.txt
+```
+
+
+Another very useful command the `wc`. This is the word count command and it counts the number of words in a file.
+
+
+```{bash}
+wc test.txt
+```
+
+We can also create a director
+
+
+```{bash}
+mkdir newfolder
+ls
+```
+
+You can also see that it has a different colour that shows it is a folder. 
+
+We can also make a folder with subfolders within it. The way we do this is we have to choose the option `-p` followed by all the folders and subfolders.
+
+
+```{bash}
+mkdir -p newfolder/sub1/sub2
+ls
+```
+
+Again, if you forget to put the `-p` it will not succeed in making the sub folders. 
+
+My question here is, if you forget the `-p` will it still create the main folder `newfolder` or will that also fail?
+
+```{bash}
+mkdir newfolder2/sub1/sub2
+ls
+```
+
+You should try this. Answer is the command will fail in it's entirety. No folders will be created.
+
+We also have very useful commands to move files `mv` and delete, i.e. remove files using the command `rm`. 
+
+Now to delete a director (i.e. folder) you need add the option -rf in the `rm` command. For example: `rm -rf dir_name`
+
+This removes the entire directory tree or folder tree.
+
+Finally, I want to mention the command `ps` which is processes. This prints the current processes that are running. 
+
+```{bash, eval = F}
+ps
+```
+
+For example, the above prints the following. 
+
+  <!-- PID TTY          TIME CMD -->
+  <!--   9 pts/0    00:00:00 bash -->
+  <!-- 321 pts/0    00:00:00 ps -->
+
+One thing I would like to mention is the the `ps` command in git bash gives a different output.
+
 
 ### How to name git branches.
 
