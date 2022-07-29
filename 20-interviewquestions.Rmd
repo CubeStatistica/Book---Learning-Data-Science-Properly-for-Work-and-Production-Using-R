@@ -85,7 +85,7 @@ Questions I have thought up for NLP
 
 Amazon Leadership Principals
 
-1. Customer Obsession
+1. __Customer Obsession__
 Are obsessed with the customer. Think how can we serve the customer and then think backward.
 
 2. Ownership
@@ -247,6 +247,10 @@ Cyber security has a red team and a blue team. The red team offensive testing. B
 
 Look into machine learning for red team and blue team. 
 
+Continuous Monitoring in software development. 
+5 Types of Monitoring + Cyber Security Monitoring.
+
+
 
 
 Blue team blocks the red team using automation. 
@@ -262,6 +266,10 @@ Data is very important in both CS and DS.
 Understand what port is, what is a packet? 
 
 Need to understand networking, and internet protocol. Understand basics of linux.
+
+### Splunk Training
+
+
 
 
 

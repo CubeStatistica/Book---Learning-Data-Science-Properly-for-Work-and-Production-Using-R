@@ -1,0 +1,44 @@
+# Cube Statistica {#cs}
+
+
+Here at Cube Statistica we are an employee first company. 
+
+All employees are considered leaders 
+
+## Leadership Principals at Cube Statistica
+
+
+0. __Leaders are People Focused__ Leaders work every day to create a safer, more productive, higher performing, more diverse, and more just work environment. They lead with empathy, have fun at work, and make it easy for others to have fun. Leaders ask themselves: Are my fellow employees growing? Are they empowered? Are they ready for what's next? Leaders have a vision for and commitment to their employees' personal success, whether that be at Amazon or elsewhere.
+
+1. __Innovate, Invent, and Simplify__
+Leaders innovate, invent, and simplify. They are externally aware, look for new ideas from everywhere, and are not limited by "not invented here", not done by us. As we do new things, we accept that we may be misunderstood for long periods of time, and since we are trying new things we might be misunderstanding something for long periods of time before correctly understand what is the best way to it.
+
+2. __Bias for Action and Focus on Minimum Viable Product (MVP)__
+We value getting things done. Many actions and decisions are reversible, improvable, and changeable. We highly regard the ability in leaders to getting things done even if they are not perfect in the first iteration. After the MVP is built then we can iterate and improve it.
+
+3. __Customer Obsession__
+Are obsessed with the customer. Think how can we serve the customer and then think backward.
+
+4. __Ownership__
+You do not sacrifice long term success for short term gains. Also, they think beyond just their task, job, and team but think of the success of the company as a whole. Finally, they never say "that's not my job."
+
+5. __Learn and Be Curious__
+Leaders are never done learning and always seek to improve themselves. They are curious about new possibilities and act to explore them.
+
+6. __Frugality__ Accomplish more with less. Constraints breed resourcefulness, self-sufficiency, and invention. 
+
+7. __Insist on the Highest Standards__
+Leaders have relentlessly high standards. Leaders are continually raising the bar to deliver high quality products, services, and processes.
+
+8. __Think Big__
+Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results. They think differently and look around corners for ways to serve customers.
+
+9. __Have a Backbone; Disagree and Commit__ Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once a decision is determined, they commit wholly.
+
+10. __Broader Responsibility__ We must be humble and thoughtful about our actions on our local communities, planet, and future generations need us to be better every day. We must begin each day with a determination to make better, do better, and be better for our customers, our employees, our partners, and the world at large. And we must end every day knowing we can do even more tomorrow. Leaders create more than they consume and always leave things better than how they found them.
+
+P.S. You can see we prefer python enumeration :)
+
+
+
+
